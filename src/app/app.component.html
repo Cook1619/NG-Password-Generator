@@ -2,22 +2,22 @@
 
 <div>
   <label for="">Enter Length</label>
-  <input type="text">
+  <input type="text" (input)="onChangeLength($event.target.value)">
 </div>
 
 <div>
   <label for="">Use Letters</label>
-  <input type="checkbox">
+  <input type="checkbox" (change)="onChangeUseLetters()">
 </div>
 
 <div>
   <label for="">Use Numbers</label>
-  <input type="checkbox">
+  <input type="checkbox" (change)="onChangeUseNumbers()">
 </div>
 
 <div>
   <label for="">Use Symbols</label>
-  <input type="checkbox">
+  <input type="checkbox" (change)="onChangeUseSymbols()">
 </div>
 
 <div>
